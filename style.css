@@ -18,13 +18,16 @@
       padding: 2rem 1rem;
     }
     
-    .form-container {
+     .form-container {
       background: white;
       border-radius: 16px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       padding: 2.5rem;
       width: 100%;
       max-width: 600px;
+      margin: 20px 0;
+      max-height: calc(100% - 40px);
+      overflow-y: auto;
     }
     
     .form-title {
@@ -144,4 +147,5 @@
         width: 100%;
         margin-bottom: 0.5rem;
       }
+
     }
