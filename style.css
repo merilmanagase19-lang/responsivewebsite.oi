@@ -1,0 +1,147 @@
+    body {
+      box-sizing: border-box;
+    }
+    
+    html, body, .main-wrapper {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .main-wrapper {
+      background: linear-gradient(135deg, #45c5e6 0%, #4afcc6 100%);
+      overflow-auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    
+    .form-container {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    .form-title {
+      color: #2ee709;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .form-subtitle {
+      color: #6c757d;
+      margin-bottom: 2rem;
+    }
+    
+    .form-label {
+      font-weight: 600;
+      color: #495057;
+      margin-bottom: 0.5rem;
+    }
+    
+    .form-control, .form-select {
+      border: 2px solid #e9ecef;
+      border-radius: 8px;
+      padding: 0.75rem;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus, .form-select:focus {
+      border-color: #667eea;
+      box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    }
+    
+    .btn-primary {
+      background: #667eea;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 2rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .btn-secondary {
+      background: #6c757d;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 2rem;
+      font-weight: 600;
+    }
+    
+    .btn-secondary:hover {
+      background: #5a6268;
+    }
+    
+    .modal-content {
+      border-radius: 16px;
+      border: none;
+    }
+    
+    .modal-header {
+      background: #667eea;
+      color: white;
+      border-radius: 16px 16px 0 0;
+    }
+    
+    .modal-title {
+      font-weight: 600;
+    }
+    
+    .confirmation-item {
+      padding: 0.75rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .confirmation-label {
+      font-weight: 600;
+      color: #495057;
+      margin-right: 0.5rem;
+    }
+    
+    .confirmation-value {
+      color: #667eea;
+    }
+    
+    .alert-success {
+      border-radius: 8px;
+      border: none;
+      background: #d4edda;
+      color: #155724;
+    }
+    
+    .password-toggle {
+      cursor: pointer;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6c757d;
+    }
+    
+    .password-wrapper {
+      position: relative;
+    }
+
+    @media (max-width: 576px) {
+      .form-container {
+        padding: 1.5rem;
+      }
+      
+      .btn-primary, .btn-secondary {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+    }
